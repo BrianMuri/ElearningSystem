@@ -4,6 +4,7 @@ SELECT a.Assign_Description, c.Course_Name, a.Due_Date
     -> JOIN Course c ON a.Course_ID = c.Course_ID
     -> WHERE a.Due_Date < CURDATE();
 
+
 --List of the instructors who teach the same courses
 SELECT
     ->     c.Course_Name,
@@ -14,6 +15,7 @@ SELECT
     -> JOIN Instructor_Credentials i ON c.Instructor_ID = i.Instructor_ID
     -> JOIN Users u ON i.User_ID = u.User_ID
     -> WHERE c.Course_Name = 'Database Systems';
+
 --List of students enrolled in more than one course
 SELECT
     s.Student_ID,
@@ -26,6 +28,7 @@ JOIN Users u ON s.User_ID = u.User_ID
 GROUP BY s.Student_ID
 HAVING COUNT(e.Course_ID) > 1;
 
+
 --List of courses with the number of assignments
 SELECT
     c.Course_Name,
@@ -33,6 +36,7 @@ SELECT
 FROM Course c
 JOIN Assignment a ON c.Course_ID = a.Course_ID
 GROUP BY c.Course_Name;
+
 
 --List of students who have not submitted any assignments
 SELECT
