@@ -55,7 +55,7 @@ CREATE TABLE Submission (
     Assign_ID INT NOT NULL,
     Student_ID INT NOT NULL,
     Submission_date DATE,
-    Grade DECIMAL(3, 2),
+    Grade DECIMAL(5, 2),
     Feedback TEXT,
     FOREIGN KEY (Assign_ID) REFERENCES Assignment(Assign_ID) ON DELETE CASCADE,
     FOREIGN KEY (Student_ID) REFERENCES Student_Credentials(Student_ID) ON DELETE CASCADE
