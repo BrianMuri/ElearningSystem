@@ -130,7 +130,7 @@ Tracks student enrollment in courses.
 Include a link or an image of your ER diagram here.  
 For example:
 ```markdown
-![ER Diagram](path/to/er_diagram.png)
+![ER Diagram](ElearningSystem/documentation/CMT302Correction.png)
 ```
 
 ---
