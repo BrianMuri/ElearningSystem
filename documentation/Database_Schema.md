@@ -149,5 +149,3 @@ For example:
    - `StudentPerformance`: Summarizes student grades and progress.
 
 ---
-
-Let me know if you'd like any refinements or additions!
